@@ -41,7 +41,7 @@ jobs:
           npm install -g snyk
           snyk test
 
-      # Setup AWS CLI
+      # Configure AWS CLI
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v3
         with:
