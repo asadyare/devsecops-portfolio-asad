@@ -6,11 +6,11 @@ on:
   pull_request:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -31,7 +31,7 @@ jobs:
         working-directory: ./frontend
         run: npm run build
 
-      # Run security scans
+      # Run Snyk security scan
       - name: Run Snyk scan
         working-directory: ./frontend
         env:
@@ -40,13 +40,27 @@ jobs:
           npm install -g snyk
           snyk test
 
-      # Terraform validation
+      # Setup AWS CLI
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      # Terraform init and validate
       - name: Terraform validate
         working-directory: ./terraform
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: us-east-1
         run: |
           terraform init -backend=false
           terraform validate
+
+      # Terraform apply
+      - name: Terraform apply
+        working-directory: ./terraform
+        run: terraform apply -auto-approve
+
+      # Deploy frontend to S3
+      - name: Deploy frontend to S3
+        run: |
+          aws s3 sync frontend/dist s3://asad-devsecops-portfolio/ --delete --acl public-read
