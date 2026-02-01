@@ -4,23 +4,11 @@ Welcome to my DevSecOps Portfolio! This repository showcases a curated collectio
 
 ## Table of Contents
 
-1. [CI/CD Pipeline with GitHub Actions](https://github.com/asadyare/ci-cd-with-jenkins)
-2. [Infrastructure as Code (IaC) with Terraform](https://github.com/asadyare/terraform-iac)
-3. [Configuration Management with Ansible](https://github.com/asadyare/ansible-config)
-4. [Kubernetes Deployment](https://github.com/asadyare/k8s-microservices-deployment)
-5. [Security Automation](https://github.com/asadyare/security-automation-demo)
-6. [Monitoring and Logging](https://github.com/asadyare/monitoring-logging-demo)
-7. [Container Security](https://github.com/asadyare/container-security)
-8. [Serverless Deployment](https://github.com/asadyare/serverless-app)
-9. [Automated Testing](https://github.com/asadyare/automated-testing)
-10. [Compliance As Code](https://github.com/asadyare/compliance-as-code)
-11. [Secrets Management](https://github.com/asadyare/secrets-management)
-12. [Network Configuration](https://github.com/asadyare/network-configuration)
-13. [Logging And Alerting](https://github.com/asadyare/logging-and-alerting)
-14. [Cloud Cost Optimization](https://github.com/asadyare/cloud-cost-optimization)
-15. [API Management](https://github.com/asadyare/api-management)
-16. [Container Orchestration](https://github.com/asadyare/container-orchestration)
-17. [Automated Documentation](https://github.com/asadyare/automated-documentation)
+1. [Frontend application](https://github.com/asadyare/portfolio-frontend)
+2. [CI CD and security pipelines](https://github.com/asadyare/portfolio-ci-cd-security)
+3. [Threat modeling and risk analysis](https://github.com/asadyare/portfolio-threat-model)
+4. [Kubernetes Deployment and security](https://github.com/asadyare/k8s-microservices-deployment)
+5. [Daily security automation](https://github.com/asadyare/portfolio-daily-security)
 
 Each project is linked to its own repository with detailed instructions on how to set it up and use it. Feel free to explore and reach out if you have any questions or suggestions.
 
