@@ -10,6 +10,8 @@ Welcome to my DevSecOps Portfolio! This repository showcases a curated collectio
 4. [Kubernetes Deployment and security](https://github.com/asadyare/portfolio-k8s-microservices-deployment)
 5. [Daily security automation](https://github.com/asadyare/portfolio-daily-security)
 
+[![DevSecOps Architecture](diagrams/architecture.png)](diagrams/architecture.png)
+
 Each project is linked to its own repository with detailed instructions on how to set it up and use it. Feel free to explore and reach out if you have any questions or suggestions.
 
 ## Contact
