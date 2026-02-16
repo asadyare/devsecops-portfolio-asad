@@ -1,20 +1,75 @@
 # DevSecOps Portfolio
 
-Welcome to my DevSecOps Portfolio. This repository showcases a curated collection of projects and demos highlighting my experience across DevSecOps practices. Each project includes clear instructions and working examples covering CI CD pipelines, infrastructure as code, Docker containerization, Kubernetes security, configuration management, security automation, monitoring, and continuous compliance.
+Welcome to my DevSecOps Portfolio. This repository is the entry point to the DevSecOps portfolio.
+It links all projects that together demonstrate end to end security
+across build, deploy, runtime, and governance.
 
 ## Table of Contents
 
-- **portfolio-frontend**: User facing application and Cloudflare Pages build target. Source of UI code and deployment workflows. [Frontend application](https://github.com/asadyare/portfolio-frontend)
+### DevSecOps Portfolio Index
 
-- **portfolio-ci-cd-security**: Shared CI and security workflows consumed by other repositories using workflow calls. Central place for secret scanning, SAST, dependency checks, and container scanning logic. [CI CD and security pipelines](https://github.com/asadyare/portfolio-ci-cd-security)
+This portfolio is designed as a system, not
+standalone projects. Each repository has a single responsibility and
+produces evidence consumed by others.
 
-- **portfolio-threat-model**: Threat models and risk analysis for the portfolio platform. Documents assets, trust boundaries, threats, and mitigations mapped to the CI pipelines. [Threat modeling and risk analysis](https://github.com/asadyare/portfolio-threat-model)
+Frontend Application
+[https://github.com/asadyare/portfolio-frontend]
 
-- **portfolio-k8s-security**: Kubernetes manifests and cluster security. Focuses on workload hardening, network policies, admission controls, and runtime posture. [Kubernetes Deployment and security](https://github.com/asadyare/portfolio-k8s-microservices-deployment)
+Cloudflare Pages:
+User facing application deployed with secure CI pipelines and protected by
+downstream controls.
 
-- **portfolio-daily-security**: Scheduled security scans and reporting. Runs recurring scans to detect newly disclosed vulnerabilities outside normal PR activity. [Daily security automation](https://github.com/asadyare/portfolio-daily-security)
+Shared CI and Security Workflows
+[https://github.com/asadyare/portfolio-ci-cd-security]
+
+Centralised CI
+security workflows for secret scanning, dependency checks, container scanning, and policy validation used by all repositories.
+
+Daily Security Automation
+[https://github.com/asadyare/portfolio-daily-security]
+
+Scheduled security
+scans, alerting, and weekly reporting for post merge and post deploy
+risk.
+
+Kubernetes Security
+[https://github.com/asadyare/portfolio-k8s-security]
+
+Cluster security, workload hardening, network isolation, and runtime detection.
+
+Threat Modeling and Risk Register
+[https://github.com/asadyare/portfolio-threat-model]
+
+Threat analysis, risk register, and control to evidence mapping.
+
+Security Lifecycle Coverage Plan Threat modeling and risk analysis
+
+Build CI security scanning and policy enforcement
+
+Deploy Kubernetes admission, networking, and TLS controls
+
+Run Runtime detection with Falco
+
+Monitor Metrics, logs, alerts, and reports
+
+Evidence CI logs Security alerts Weekly reports Runtime events
+
+### Architecture
 
 [![DevSecOps Architecture](diagrams/architecture.png)](diagrams/architecture.png)
+
+Printable architecture pack documents CI, Kubernetes, runtime detection, and observability.
+
+[![DevSecOps Architecture pack](diagrams/DevSecOps_Architecture_Pack.pdf)](diagrams/DevSecOps_Architecture_Pack.pdf)
+
+### Security Model Summary
+
+- CI prevents insecure changes.
+- Kubernetes enforces least privilege.
+- Runtime detection catches active threats.
+- Reporting provides governance and evidence.
+
+This index represents the full security lifecycle.
 
 Each project is linked to its own repository with detailed instructions on how to set it up and use it. Feel free to explore and reach out if you have any questions or suggestions.
 
