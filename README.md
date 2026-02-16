@@ -12,33 +12,28 @@ This portfolio is designed as a system, not
 standalone projects. Each repository has a single responsibility and
 produces evidence consumed by others.
 
-Frontend Application
-[https://github.com/asadyare/portfolio-frontend]
+[Frontend Application](https://github.com/asadyare/portfolio-frontend)
 
 Cloudflare Pages:
 User facing application deployed with secure CI pipelines and protected by
 downstream controls.
 
-Shared CI and Security Workflows
-[https://github.com/asadyare/portfolio-ci-cd-security]
+[Shared CI and Security Workflows](https://github.com/asadyare/portfolio-ci-cd-security)
 
 Centralised CI
 security workflows for secret scanning, dependency checks, container scanning, and policy validation used by all repositories.
 
-Daily Security Automation
-[https://github.com/asadyare/portfolio-daily-security]
+[Daily Security Automation](https://github.com/asadyare/portfolio-daily-security)
 
 Scheduled security
 scans, alerting, and weekly reporting for post merge and post deploy
 risk.
 
-Kubernetes Security
-[https://github.com/asadyare/portfolio-k8s-security]
+[Kubernetes Security](https://github.com/asadyare/portfolio-k8s-security)
 
 Cluster security, workload hardening, network isolation, and runtime detection.
 
-Threat Modeling and Risk Register
-[https://github.com/asadyare/portfolio-threat-model]
+[Threat Modeling and Risk Register](https://github.com/asadyare/portfolio-threat-model)
 
 Threat analysis, risk register, and control to evidence mapping.
 
@@ -60,7 +55,7 @@ Evidence CI logs Security alerts Weekly reports Runtime events
 
 Printable architecture pack documents CI, Kubernetes, runtime detection, and observability.
 
-[![DevSecOps Architecture pack](diagrams/DevSecOps_Architecture_Pack.pdf)](diagrams/DevSecOps_Architecture_Pack.pdf)
+[![DevSecOps Architecture pack](diagrams/DevSecOps_Architecture_Pack.pdf](diagrams/DevSecOps_Architecture_Pack.pdf)
 
 ### Security Model Summary
 
