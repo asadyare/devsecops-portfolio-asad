@@ -55,7 +55,7 @@ Evidence CI logs Security alerts Weekly reports Runtime events
 
 Printable architecture pack documents CI, Kubernetes, runtime detection, and observability.
 
-[![DevSecOps Architecture pack](diagrams/DevSecOps_Architecture_Pack.pdf](diagrams/DevSecOps_Architecture_Pack.pdf)
+[DevSecOps Architecture pack](diagrams/DevSecOps_Architecture_Pack.pdf)
 
 ### Security Model Summary
 
